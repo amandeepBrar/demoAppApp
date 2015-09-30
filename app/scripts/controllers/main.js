@@ -10,7 +10,6 @@
 angular.module('demoAppApp')
   .controller('MainCtrl', function (Maths,$scope,$location,sharedData) {
     $scope.readyForGreeting = function(){
-    	console.log('works until here');
     	sharedData.name = $scope.name;
     	$location.path('/greeting');
     };

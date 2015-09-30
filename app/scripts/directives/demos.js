@@ -4,7 +4,7 @@ angular.module('demoAppApp')
 .directive('ptcError',function(){
 	return {
 		restrict:'E',
-		template:'<p>{{clor}}<i ng-transclude>error occured</i><button class="btn btn-danger">X</button></p>',
+		template:'<p style="color:{{clor}}"><i ng-transclude>error occured</i><button class="btn btn-danger">X</button></p>',
 		replace:true,
 		scope:{
 			clor:'='
